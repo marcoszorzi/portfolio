@@ -64,20 +64,16 @@ html{
     background-color: white;
     display: grid;
     grid-template-areas:"left top top" 
-                        "left right right";
-}
-
-
-.aboutl{
-    grid-area: left;
+                        "bleft right right";
+    grid-template-columns: 0.5fr, 2fr;
 }
 
 .topic{
+    grid-area: left;
     background-color: #2F4152;
     color: white;
     transform: skew(-20deg);
     margin: 2vh 15vw 2vh 0vw;
-    /* padding-left: 1rem; */
     text-align: center;
     line-height: 2rem;
     margin-left: 1vw;
@@ -88,34 +84,32 @@ html{
 }
 
 .contactInfo{
+    grid-area: bleft;
+    margin:auto;
     text-align: justify;
     line-height: 2rem;
     display: grid;
     grid-template-columns: "left right";
 }
 
-.contactl{
-    grid-area: left;
-}
-
-.contactl > p{
-    font-weight: bolder;
-}
-
-.contactr{
-    grid-area: right;
-    margin-left: 5rem;
+.contactInfo > section > p,
+.contactInfo > section > a{
+    display: inline-block;
+    vertical-align: top;
 }
 
 .about > .aboutTop{
     grid-area: top;
     margin-top: 4vh;
+    height: 5px;
     border-top: 2px solid #3699DC;
 }
 
+.aboutr{
+    grid-area: right;
+}
 
 .aboutr > img{
-    grid-area: right;
     float: left;
     border-right: 2px solid #3699DC;
     padding: 0.1rem;
@@ -126,9 +120,10 @@ html{
 }
 
 .aboutr > p{
-    grid-area: right;
     margin-top: 2rem;
     text-align: justify;
+    max-width: 850px;
+    line-height: 1.5rem;
 }
 
 
@@ -176,7 +171,7 @@ html{
     padding-top: 4vh;
     padding-bottom: 4vh;
     display: grid;
-    grid-template-areas: "left top top"
+    grid-template-areas: "topleft top top"
                          "bottom bottom right";
 }
 
@@ -190,10 +185,11 @@ html{
 
 .experience > .topic,
 .education > .topic{
-    grid-area: left;
+    grid-area: topleft;
     background-color: #3699DC;
     margin-bottom: 2vh;
     margin-right: 60vw;
+    width: 200px;
 }
 
 
@@ -213,9 +209,16 @@ html{
     grid-template-columns: 2fr 2fr 0fr ;
 }
 
+.experience > ul > li > .title,
+.education > ul > li > .title{
+    /* font-weight: bolder; */
+    font-size: 1.3rem;
+}
+
 .experience > ul > li :first-child,
 .education > ul > li :first-child{
     grid-area: position;
+    margin-top: 10px;
 }
 
 .experience > ul > li > .time,
@@ -226,6 +229,7 @@ html{
     border-radius: 5px;
     max-width: 100px;
     padding-left: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 .experience > ul > li > ul,
@@ -233,10 +237,11 @@ html{
     grid-area: list;
     margin-left: 5vw;
     margin-top: 1vh;
+    line-height: 1.5rem;
 } 
 
 
-/*PORTFOLIO*/
+/*CONTACT*/
 .portfolio{
     display: grid;
     grid-template-areas: "left top top"
@@ -263,4 +268,68 @@ html{
     
     margin-left: auto;
     margin-right: auto;
+}
+
+.portfolio > form > p {
+    margin: 0.5rem;
+    margin-left: 2rem;
+    /* text-align: center; */
+    /* align-content: center; */
+}
+
+.portfolio > form > p > input{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    min-width: 400px;
+}
+
+.portfolio > form > p > .formBody{
+    min-width: 400px;
+    min-height: 200px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.portfolio > form > .buttons{
+    display: grid;
+    grid-template-areas: "left right";
+}
+
+.portfolio > form > .buttons > .btnClear{
+    background-color: white;
+    border-color: #2F4152;
+    color: #2F4152;
+    grid-area: left;
+}
+
+.portfolio > form > .buttons > .btnSubmit{
+    background-color: #2F4152;
+    color: white;
+    grid-area: right;
+}
+
+.portfolio > form > .buttons > input{
+    border-radius: 12px;
+    font-size: 1.5rem;
+    max-width: 150px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    /* margin-bottom: 2rem; */
+}
+
+
+.progressbar {
+    background-color: #EEE;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    width: 100px;
+}
+  
+.progressbar>div {
+    background-color: #3699DC;
+    width: 40%;
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
 }
