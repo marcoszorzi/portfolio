@@ -1,0 +1,330 @@
+/* Marcos Rosa
+April 2019*/
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+html{
+    background-color: #EEE;
+}
+
+
+/* HEADER */
+.top{
+    border-bottom: 2px solid grey;
+}
+.head{
+    text-align: left;
+    margin-left: 20vw;
+}
+
+.head > h1{
+    color: #2F4152;
+    font-size: 4rem;
+}
+
+.head > h3{
+    color: #2F4152;
+}
+
+.navbar{
+    margin: 5vh 20vw 10vh 0vw;
+    padding: 1rem;
+    background-color: #2F4152;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.navitem{
+    color: #EEE;
+    text-decoration: none;
+    border-left: 2px solid #EEE;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.navitem:first-child{
+    border: none;
+}
+
+.navitem:hover{
+    color: #3699DC;
+    text-shadow: 0.3px 0.3px black;
+}
+
+
+/* ABOUT ME */
+.about{
+    background-color: white;
+    display: grid;
+    grid-template-areas:"left top top" 
+                        "left right right";
+}
+
+
+.aboutl{
+    grid-area: left;
+}
+
+.topic{
+    background-color: #2F4152;
+    color: white;
+    transform: skew(-20deg);
+    margin: 2vh 15vw 2vh 0vw;
+    /* padding-left: 1rem; */
+    text-align: center;
+    line-height: 2rem;
+    margin-left: 1vw;
+}
+
+.topic > h3{
+    transform: skew(20deg);
+}
+
+.contactInfo{
+    text-align: justify;
+    line-height: 2rem;
+    display: grid;
+    grid-template-columns: "left right";
+}
+
+.contactl{
+    grid-area: left;
+}
+
+.contactl > p{
+    font-weight: bolder;
+}
+
+.contactr{
+    grid-area: right;
+    margin-left: 5rem;
+}
+
+.about > .aboutTop{
+    grid-area: top;
+    margin-top: 4vh;
+    border-top: 2px solid #3699DC;
+}
+
+
+.aboutr > img{
+    grid-area: right;
+    float: left;
+    border-right: 2px solid #3699DC;
+    padding: 0.1rem;
+    width: 100px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.aboutr > p{
+    grid-area: right;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+
+/* SKILLS */
+.skills{
+    display: grid;
+    grid-template-areas: "lefts tops tops"
+                         "lefts rights rights";
+    background-color: white;
+    padding-bottom: 4vh;
+}
+
+.skills > .left > .topic{
+    margin-right: 60vw;
+}
+
+.skillsl{
+    position: center;
+    margin-right: 0;
+    margin-left: 5rem;
+}
+
+.left{
+    grid-area: lefts;
+}
+
+
+.right{
+    grid-area: rights;
+    margin-top: 4vh;
+    border-top: 2px solid #3699DC;
+    margin-left: -48vw;
+}
+
+.skillsr{
+    margin-top: 2.2rem;
+}
+
+
+/* EXPERIENCE  & EDUCATION*/
+.experience,
+.education{
+    background-color: #2F4152;
+    color: white;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: grid;
+    grid-template-areas: "left top top"
+                         "bottom bottom right";
+}
+
+.experienceTop,
+.educationTop{
+    grid-area: top;
+    margin-top: 4vh;
+    border-top: 2px solid #3699DC;
+    margin-left: -50vw;
+}
+
+.experience > .topic,
+.education > .topic{
+    grid-area: left;
+    background-color: #3699DC;
+    margin-bottom: 2vh;
+    margin-right: 60vw;
+}
+
+
+.experience > ul,
+.education > ul{
+    grid-area: bottom;
+    margin-left: 20vh;
+}
+
+.experience > ul > li,
+.education > ul > li{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-areas: "position time right"
+                         "list list right"
+                         "list list right";
+    grid-template-columns: 2fr 2fr 0fr ;
+}
+
+.experience > ul > li :first-child,
+.education > ul > li :first-child{
+    grid-area: position;
+}
+
+.experience > ul > li > .time,
+.education > ul > li > .time{
+    grid-area: time;
+    text-align: left;
+    background-color: #3699DC;
+    border-radius: 5px;
+    max-width: 100px;
+    padding-left: 1.5rem;
+}
+
+.experience > ul > li > ul,
+.education > ul > li > ul{
+    grid-area: list;
+    margin-left: 5vw;
+    margin-top: 1vh;
+} 
+
+
+/*CONTACT*/
+.contact{
+    display: grid;
+    grid-template-areas: "left top top"
+                         "bottom bottom bottom";
+    /* grid-template-columns: 0.2fr, 0.5fr, 0.2fr; */
+    padding-top: 4vh;
+}
+
+.contact > .topic{
+    grid-area: left;
+    margin-right: 60vw;
+}
+
+.contactTop{
+    grid-area: top;
+    margin-top: 4vh;
+    border-top: 2px solid #3699DC;
+    margin-left: -50vw;
+}
+
+.contact > form{
+    grid-area: bottom;
+    /* margin-left: -50vw; */
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact > form > p {
+    margin: 0.5rem;
+    margin-left: 2rem;
+    /* text-align: center; */
+    /* align-content: center; */
+}
+
+.contact > form > p > input{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    min-width: 400px;
+}
+
+.contact > form > p > .formBody{
+    min-width: 400px;
+    min-height: 200px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact > form > .buttons{
+    display: grid;
+    grid-template-areas: "left right";
+}
+
+.contact > form > .buttons > .btnClear{
+    background-color: white;
+    border-color: #2F4152;
+    color: #2F4152;
+    grid-area: left;
+}
+
+.contact > form > .buttons > .btnSubmit{
+    background-color: #2F4152;
+    color: white;
+    grid-area: right;
+}
+
+.contact > form > .buttons > input{
+    border-radius: 12px;
+    font-size: 1.5rem;
+    max-width: 150px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    /* margin-bottom: 2rem; */
+}
+
+
+.progressbar {
+    background-color: #EEE;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    width: 100px;
+}
+  
+.progressbar>div {
+    background-color: #3699DC;
+    width: 40%;
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
+}
