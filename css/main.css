@@ -241,8 +241,9 @@ html{
 } 
 
 
-/*CONTACT*/
+/*PORTFOLIO*/
 .portfolio{
+    background-color: white; 
     display: grid;
     grid-template-areas: "left top top"
                          "bottom bottom bottom";
@@ -262,59 +263,59 @@ html{
     margin-left: -50vw;
 }
 
-.portfolio > form{
+
+.portfolio > .cards{
     grid-area: bottom;
-    /* margin-left: -50vw; */
-    
-    margin-left: auto;
-    margin-right: auto;
+    list-style: none;
 }
 
-.portfolio > form > p {
-    margin: 0.5rem;
-    margin-left: 2rem;
-    /* text-align: center; */
-    /* align-content: center; */
-}
-
-.portfolio > form > p > input{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    min-width: 400px;
-}
-
-.portfolio > form > p > .formBody{
-    min-width: 400px;
-    min-height: 200px;
-    font-size: 1rem;
-    resize: none;
-}
-
-.portfolio > form > .buttons{
+.portfolio > .cards{
     display: grid;
-    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
 }
 
-.portfolio > form > .buttons > .btnClear{
-    background-color: white;
-    border-color: #2F4152;
+.portfolio > .cards > li > div{
+    background-color: #EEE;
     color: #2F4152;
-    grid-area: left;
+    /* border: 2px solid #3699DC; */
+    box-shadow: 1px 1px 4px #3699DC;
+
+    margin: 2rem;
+    width: 600px;
+    height: 250px;
+    /* padding: 0rem 1rem 0rem 0rem; */
+    padding: 1rem;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-areas: "image sitename"
+                         "image description"
+                         "image platform"
+                         "image link";
 }
 
-.portfolio > form > .buttons > .btnSubmit{
-    background-color: #2F4152;
-    color: white;
-    grid-area: right;
+.portfolio > .cards > li > div > img{
+    grid-area: image;
+    margin: auto;
+    margin-right: 1rem;
+    max-width: 300px;
+    max-height: 250px;
 }
 
-.portfolio > form > .buttons > input{
-    border-radius: 12px;
-    font-size: 1.5rem;
-    max-width: 150px;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    /* margin-bottom: 2rem; */
+.portfolio > .cards > li > div > .name{
+    grid-area: sitename;
+}
+
+.portfolio > .cards > li > div > .description{
+    grid-area: description;
+}
+
+.portfolio > .cards > li >  div > .platform{
+    grid-area: platform;
+}
+
+.portfolio > .cards > li >  div > .link{
+    grid-area: link;
 }
 
 
@@ -333,3 +334,7 @@ html{
     height: 20px;
     border-radius: 10px;
 }
+
+
+
+

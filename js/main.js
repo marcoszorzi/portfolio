@@ -78,7 +78,7 @@ let education = [
         degree: "Diploma",
         time: "2018-2020",
         roles:["HTML, JavaScript and CSS","Node.JS","C++, C# and JAVA", 
-               "Mongo DB", "Ajax, REST API and CORS", 
+               "Mongo DB", "Cordova, Ajax, REST API and CORS", 
                "Adobe Photoshop, Adobe Illustrator, Adobe XD and Adobe Dreamweaver",
                "VS Code, Visual Studio, Xcode and Android Studio"]
     },
@@ -141,13 +141,39 @@ let skills = [
     }
 ];
 
+let portfolio = [
+    {
+        id: 1,
+        name: "PIZZA SHOP",
+        description: "Full-stack developed website, using HTML 5, CSS 3, NodeJS, MongoDB, Express and CRUD.",
+        platform: "Web",
+        screenshot: "./img/web_pizzashop.png",
+        link: "https://zorz0004.github.io/pizzashop/"
+    },
+    {
+        id: 2,
+        name: "PLAYR",
+        description: "Music player developed with Cordova using Cordova Media plugin.",
+        platform: "Android",
+        screenshot: "./img/a_playr.png",
+        link: "https://zorz0004.github.io/playr"
+    },
+    {
+        id: 3,
+        name: "FINDR",
+        description: "Geolocation app developed with Cordova using Google Maps API.",
+        platform: "iOS",
+        screenshot: "./img/ios.png",
+        link: "https://zorz0004.github.io/findr"
+    }
+]
 
 document.addEventListener('DOMContentLoaded', () => {
 
     setProfile();
     setExperience();
     setEducation();
-
+    setPortfolio();
 });
 
 function setProfile(ev){
@@ -249,3 +275,52 @@ function setEducation(ev){
     });
 
 }
+
+function setPortfolio(ev){
+    if(ev){
+        ev.preventDefault();
+    }
+
+    let cards = document.querySelector(".portfolio").querySelector(".cards");
+
+    while(cards.firstChild){
+        cards.removeChild(cards.firstChild);
+    }
+
+    portfolio.forEach(element => {
+        let li = document.createElement("li");
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        let h2 = document.createElement("h2");
+        let p =document.createElement("p");
+        let pl = document.createElement("p");
+        let a = document.createElement("a");
+        
+        img.setAttribute("alt", element.name.toLowerCase());
+        h2.classList.add("name");
+        p.classList.add("description");
+        pl.classList.add("platform");
+        a.classList.add("link");
+        a.setAttribute("class","link");
+        a.setAttribute("target","_blank");
+
+        img.src = element.screenshot;
+        h2.textContent = element.name;
+        p.textContent = element.description;
+        pl.textContent = "Platform: " + element.platform;
+        a.href = element.link;
+        a.innerHTML = "Take a look...";
+
+        div.appendChild(img);
+        div.appendChild(h2);
+        div.appendChild(p);
+        div.appendChild(pl);
+        div.appendChild(a);
+
+        li.appendChild(div);
+        cards.appendChild(li);
+    })
+
+
+}
+
