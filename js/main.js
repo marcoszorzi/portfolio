@@ -88,7 +88,7 @@ let education = [
         institution: "Positivo Universtity",
         time: "2016-2017",
         degree: "MBA",
-        roles:["PMBOK","Gantt Chart",
+        roles:["PMBOK","Project Management Charts",
                "Agile Projects","Economic Project Viability",
                "Projects Scope and Timing","Human Resources in Projects","Quality in Projects"]
     },
@@ -157,11 +157,12 @@ function setProfile(ev){
 
     //Left side
     let contactInfo = document.querySelector(".contactInfo");
-    
+    console.log(contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").href);
+
     contactInfo.querySelector(".phone").querySelector(".myPhone").innerText = contact.phone;
     contactInfo.querySelector(".email").querySelector(".myEmail").innerText = contact.email;
-    contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").innerHTML.href = contact.linkedin;
-    contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").innerHTML = "Click to Go";
+    contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").href = contact.linkedin;
+    contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").innerText = "Click to Go";
     contactInfo.querySelector(".city").querySelector(".myCity").innerText = contact.city;
 
 
