@@ -236,8 +236,8 @@ html{
 } 
 
 
-/*CONTACT*/
-.contact{
+/*PORTFOLIO*/
+.portfolio{
     display: grid;
     grid-template-areas: "left top top"
                          "bottom bottom bottom";
@@ -245,86 +245,22 @@ html{
     padding-top: 4vh;
 }
 
-.contact > .topic{
+.portfolio > .topic{
     grid-area: left;
     margin-right: 60vw;
 }
 
-.contactTop{
+.portfolioTop{
     grid-area: top;
     margin-top: 4vh;
     border-top: 2px solid #3699DC;
     margin-left: -50vw;
 }
 
-.contact > form{
+.portfolio > form{
     grid-area: bottom;
     /* margin-left: -50vw; */
     
     margin-left: auto;
     margin-right: auto;
-}
-
-.contact > form > p {
-    margin: 0.5rem;
-    margin-left: 2rem;
-    /* text-align: center; */
-    /* align-content: center; */
-}
-
-.contact > form > p > input{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    min-width: 400px;
-}
-
-.contact > form > p > .formBody{
-    min-width: 400px;
-    min-height: 200px;
-    font-size: 1rem;
-    resize: none;
-}
-
-.contact > form > .buttons{
-    display: grid;
-    grid-template-areas: "left right";
-}
-
-.contact > form > .buttons > .btnClear{
-    background-color: white;
-    border-color: #2F4152;
-    color: #2F4152;
-    grid-area: left;
-}
-
-.contact > form > .buttons > .btnSubmit{
-    background-color: #2F4152;
-    color: white;
-    grid-area: right;
-}
-
-.contact > form > .buttons > input{
-    border-radius: 12px;
-    font-size: 1.5rem;
-    max-width: 150px;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    /* margin-bottom: 2rem; */
-}
-
-
-.progressbar {
-    background-color: #EEE;
-    border-radius: 13px;
-    /* (height of inner div) / 2 + padding */
-    padding: 3px;
-    width: 100px;
-}
-  
-.progressbar>div {
-    background-color: #3699DC;
-    width: 40%;
-    /* Adjust with JavaScript */
-    height: 20px;
-    border-radius: 10px;
 }
