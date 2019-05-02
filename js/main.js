@@ -112,32 +112,48 @@ let skills = [
     {
         id: 1,
         skill: "HTML & CSS",
-        level: 5
+        level: 90
     },
     {
         id: 2,
         skill: "JavaScript",
-        level: 4
+        level: 80
     },
     {
         id: 3,
-        skill: "C, C++, C# and Java",
-        level: 4
+        skill: "C, C++",
+        level: 70
     },
     {
         id: 4,
-        skill: "Photoshop, Illustrator & XD",
-        level: 4
+        skill: "C#",
+        level: 50
+
     },
     {
         id: 5,
-        skill: "SQL and Oracle",
-        level: 5
+        skill: "Java",
+        level: 70
     },
     {
         id: 6,
+        skill: "Photoshop, Illustrator & XD",
+        level: 70
+    },
+    {
+        id: 7,
+        skill: "SQL",
+        level: 90
+    },
+    {
+        id: 8,
+        skill: "Oracle",
+        level: 70
+    },
+    {
+        id: 8,
         skill: "MongoDB",
-        level: 4
+        level: 80
     }
 ];
 
@@ -171,6 +187,7 @@ let portfolio = [
 document.addEventListener('DOMContentLoaded', () => {
 
     setProfile();
+    setSkills();
     setExperience();
     setEducation();
     setPortfolio();
@@ -183,8 +200,8 @@ function setProfile(ev){
 
     //Left side
     let contactInfo = document.querySelector(".contactInfo");
-    console.log(contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").href);
 
+    //Set values
     contactInfo.querySelector(".phone").querySelector(".myPhone").innerText = contact.phone;
     contactInfo.querySelector(".email").querySelector(".myEmail").innerText = contact.email;
     contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").href = contact.linkedin;
@@ -195,8 +212,72 @@ function setProfile(ev){
     //right side
     let about = document.querySelector(".aboutr");
 
+    //Set values
     about.querySelector(".picture").src = contact.picture;
     about.querySelector(".description").innerText = contact.about;
+}
+
+function setSkills(ev){
+    if(ev){
+        ev.preventDefault();
+    }
+
+    let skillList = document.querySelector(".skillsList");
+
+    //Clear whatever is inside the list
+    while(skillList.firstChild){
+        skillList.removeChild(skillList.firstChild);
+    }
+
+    
+    //Left List
+    skillsL = document.createElement("ul");
+    skillsL.classList.add("skillsL");
+
+    //Center List
+    skillsC = document.createElement("ul");
+    skillsC.classList.add("skillsC");
+
+    //Right List
+    skillsR = document.createElement("ul");
+    skillsR.classList.add("skillsR");
+
+
+    let count = 0;
+    skills.forEach(element =>{
+        //Create Elements
+        let li = document.createElement("li");
+        let div = document.createElement("div");
+        div.classList.add("progressbar");
+        let divP = document.createElement("div");
+
+
+        //Set values
+        li.innerText = element.skill;
+        divP.setAttribute("style",`width:${element.level}%;`);
+
+        div.appendChild(divP);
+
+        li.appendChild(div);
+
+        if(count <= 2){
+            skillsL.appendChild(li);
+        } else if(count > 2 && count <= 5){
+
+            skillsC.appendChild(li);
+        } else{
+
+            skillsR.appendChild(li);
+        }
+
+        count++;
+    });
+
+    //Append Lists
+    skillList.appendChild(skillsL);
+    skillList.appendChild(skillsC);    
+    skillList.appendChild(skillsR);
+
 }
 
 function setExperience(ev){
@@ -211,6 +292,7 @@ function setExperience(ev){
         xpList.removeChild(xpList.firstChild);
     }
 
+    //Populate elements
     experience.forEach(element =>{
 
         let li = document.createElement("li");
@@ -249,6 +331,7 @@ function setEducation(ev){
         eduList.removeChild(eduList.firstChild);
     }
 
+    //Populate elements
     education.forEach(element => {
 
         let li = document.createElement("li");
@@ -283,10 +366,12 @@ function setPortfolio(ev){
 
     let cards = document.querySelector(".portfolio").querySelector(".cards");
 
+    //Clear whatever is in the list
     while(cards.firstChild){
         cards.removeChild(cards.firstChild);
     }
 
+    //Populate elements
     portfolio.forEach(element => {
         let li = document.createElement("li");
         let div = document.createElement("div");

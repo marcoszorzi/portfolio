@@ -130,36 +130,45 @@ html{
 /* SKILLS */
 .skills{
     display: grid;
-    grid-template-areas: "lefts tops tops"
-                         "lefts rights rights";
+    grid-template-areas: "topL tops tops"
+                         "bottom bottom bottom";
     background-color: white;
     padding-bottom: 4vh;
 }
 
-.skills > .left > .topic{
-    margin-right: 60vw;
-}
-
-.skillsl{
-    position: center;
-    margin-right: 0;
-    margin-left: 5rem;
-}
-
-.left{
-    grid-area: lefts;
-}
-
-
-.right{
-    grid-area: rights;
+.skills > .skillsTop{
+    grid-area: tops;
     margin-top: 4vh;
+    height: 5px;
     border-top: 2px solid #3699DC;
     margin-left: -48vw;
 }
 
-.skillsr{
-    margin-top: 2.2rem;
+
+.skills > .skillsList{
+    display: grid;
+    grid-template-areas: "left leftS centerS rightS";
+    padding: 2rem 5rem;
+}
+
+.skills > .topic{
+    grid-area: topL;
+    margin-right: 60vw;
+}
+
+.skills > .skillsList > .skillsL{
+    grid-area: leftS;
+    list-style: none;
+}
+
+.skills > .skillsList > .skillsC{
+    grid-area: centerS;
+    list-style: none;
+}
+
+.skills > .skillsList > .skillsR{
+    grid-area: rightS;
+    list-style: none;
 }
 
 
@@ -211,7 +220,6 @@ html{
 
 .experience > ul > li > .title,
 .education > ul > li > .title{
-    /* font-weight: bolder; */
     font-size: 1.3rem;
 }
 
@@ -247,7 +255,6 @@ html{
     display: grid;
     grid-template-areas: "left top top"
                          "bottom bottom bottom";
-    /* grid-template-columns: 0.2fr, 0.5fr, 0.2fr; */
     padding-top: 4vh;
 }
 
@@ -277,13 +284,11 @@ html{
 .portfolio > .cards > li > div{
     background-color: #EEE;
     color: #2F4152;
-    /* border: 2px solid #3699DC; */
     box-shadow: 1px 1px 4px #3699DC;
 
     margin: 2rem;
     width: 600px;
     height: 250px;
-    /* padding: 0rem 1rem 0rem 0rem; */
     padding: 1rem;
     border-radius: 15px;
 
@@ -319,22 +324,67 @@ html{
 }
 
 
+
+/* FOOTER */
+.footer{
+    background-color: #2F4152; 
+    color: white;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    border-top: 10px solid grey;
+
+    display: grid;
+    grid-template-areas:  "left top top top right" 
+                          "left social tech contact right"
+                          "left bottom bottom bottom right";
+    grid-template-columns: 0.5fr 2fr 2fr 2fr 0.5fr;
+}
+
+.footer > ul {
+    line-height: 1.5rem;
+    list-style: none;
+}
+
+.footer > ul > h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.footer > ul > img,
+.footer > ul > a > img{
+    max-width: 30px;
+}
+
+.footer > ul > li{
+    font-size: 0.85rem;
+}
+
+.footer > .social{
+    grid-area: social;
+}
+
+.footer > .tech{
+    grid-area: tech;
+}
+
+.footer > .contact{
+    grid-area: contact;
+}
+
+
+
+/* SKILL PROGRESS BAR*/
 .progressbar {
     background-color: #EEE;
     border-radius: 13px;
-    /* (height of inner div) / 2 + padding */
     padding: 3px;
     width: 100px;
+    margin-bottom: 0.8rem;
 }
   
-.progressbar>div {
+.progressbar > div {
     background-color: #3699DC;
-    width: 40%;
-    /* Adjust with JavaScript */
     height: 20px;
     border-radius: 10px;
 }
-
-
-
 
