@@ -161,7 +161,7 @@ let portfolio = [
     {
         id: 1,
         name: "PIZZA SHOP",
-        description: "Full-stack developed website, using HTML 5, CSS 3, NodeJS, MongoDB, Express and CRUD.",
+        description: "Full-stack developed website, using HTML 5, CSS 3, Javascript on front-end. NodeJS, MongoDB, Express and CRUD makes everything happend on back-end.",
         platform: "Web",
         screenshot: "./img/web_pizzashop.png",
         link: "https://zorz0004.github.io/pizzashop/"
@@ -172,15 +172,22 @@ let portfolio = [
         description: "Music player developed with Cordova using Cordova Media plugin.",
         platform: "Android",
         screenshot: "./img/a_playr.png",
-        link: "https://zorz0004.github.io/playr"
+        link: "https://github.com/zorz0004/playr"
     },
     {
         id: 3,
         name: "FINDR",
         description: "Geolocation app developed with Cordova using Google Maps API.",
         platform: "iOS",
-        screenshot: "./img/ios.png",
-        link: "https://zorz0004.github.io/findr"
+        screenshot: "./img/ios_findr.png",
+        link: "https://github.com/zorz0004/findr"
+    },
+    {
+        id: 4,
+        name: "Class project - Portfolio",
+        description: "Portfolio simulation using Bootstrap.",
+        screenshot: "./img/web_bootstrap_exercise.png",
+        link: "https://zorz0004.github.io/bootstrap-assignment/"
     }
 ]
 
