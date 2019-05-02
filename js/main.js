@@ -186,6 +186,18 @@ let portfolio = [
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    //Responsive menu
+    document.querySelector(".hamburger").addEventListener("click", function(ev){
+        ev.preventDefault();
+        if(document.querySelector(".navbar").classList.contains("hide")){
+            document.querySelector(".navbar").classList.remove("hide");
+            document.querySelector(".hamburger").classList.add("reverse");
+        }else{
+            document.querySelector(".navbar").classList.add("hide");
+            document.querySelector(".hamburger").classList.remove("reverse");
+        }
+    });
+
     setProfile();
     setSkills();
     setExperience();

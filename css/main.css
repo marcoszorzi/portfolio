@@ -378,7 +378,7 @@ html{
     background-color: #EEE;
     border-radius: 13px;
     padding: 3px;
-    width: 100px;
+    width: 200px;
     margin-bottom: 0.8rem;
 }
   
@@ -388,3 +388,185 @@ html{
     border-radius: 10px;
 }
 
+
+
+/*Mid sized*/
+@media (max-width: 1400px){
+
+    .head > section{
+        display: none;
+    }
+
+    .navbar {
+        margin: 5vh 10vw 5vh 0vw;
+    }
+
+    .aboutr > p {
+        max-width: 600px;
+    }
+
+    .experience > ul,
+    .education > ul{
+        margin-left: 5vh;
+    }
+
+    .experience > ul > li > .title, 
+    .education > ul > li > .title {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .portfolio > .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+
+/*Small sized*/
+@media (max-width: 900px){
+    /*HEADER*/
+    .head{
+        padding-top: 2rem;
+        margin: auto;
+        text-align: center;
+    }
+
+    .head > h1{
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .head > h3{
+        font-size: 0.8rem;
+        margin-bottom: 4vh;
+    }
+
+    .head > .hamburger > section{
+        display: block;
+        border-bottom: 6px solid #2F4152;
+        max-width: 40px;
+        margin: 5px;
+    }
+
+    .reverse{
+        display: flex;
+        flex-direction: row;
+    }
+    .reverse > section{
+        border-bottom: none;
+        border-left: 6px solid #2F4152;
+        height: 30px;
+        margin: 5px;
+    }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 5rem 1rem 0rem;
+        padding: 0;
+        text-align: left;
+    }
+
+    .navbar > .navitem{
+        border-left: none;
+        font-size: 1rem;
+        margin: 0.5rem 0rem;
+    }
+
+    .hide{
+        display: none;
+    }
+
+
+    /*ABOUT*/
+    .about{
+        display: block;
+    }
+
+    .contactInfo{
+        margin-left: 1rem;
+    }
+
+    .aboutr > p{
+        max-width: 350px;
+        text-align: justify;
+    }
+
+    .aboutr > img{
+        border-right: none;
+        margin-top: 0;
+        margin-bottom: 7rem;
+    }
+
+
+    /* SKILLS */
+    .skills{
+        display: block;
+    }
+
+    .skills > .skillsTop{
+        display: none;
+    }
+
+    .skills > .skillsList{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*EXPERIENCE & EDUCATION*/
+    .experience, .education{
+        display: block;
+    }
+
+    .experienceTop, .educationTop{
+        display: none;
+    }
+
+    .experience > ul > li, 
+    .education > ul > li{
+        grid-template-areas: "position right time" 
+                             "list list right" 
+                            "list list right";
+    }
+
+    .experience > ul > li > .time, 
+    .education > ul > li > .time{
+        width: 100px;
+        height: 25px;
+    }
+
+    /* PORTFOLIO */
+    .portfolio > .cards > li > div{
+        grid-template-areas: "image" 
+                             "sitename"
+                             "description" 
+                             "platform" 
+                             "link";
+
+        max-width: 320px;
+        margin: 2rem 0rem;
+        height: auto;
+    }
+
+    .portfolio > .cards > li > div > img{
+        margin: auto;
+    }
+
+    .portfolio > .cards > li > div > h2,
+    .portfolio > .cards > li > div > p,
+    .portfolio > .cards > li > div > a{
+        margin: 10px 0px;
+    }
+
+    /* FOOTER */
+    .footer{
+        display: block;
+    }
+
+    .footer > ul{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
