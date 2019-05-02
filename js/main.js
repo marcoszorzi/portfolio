@@ -185,6 +185,7 @@ let portfolio = [
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
+    location.replace("https://marcoszorzi.github.io/portfolio/");
 
     //Responsive menu
     document.querySelector(".hamburger").addEventListener("click", function(ev){
