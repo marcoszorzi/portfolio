@@ -184,8 +184,9 @@ let portfolio = [
     },
     {
         id: 4,
-        name: "Class project - Portfolio",
-        description: "Portfolio simulation using Bootstrap.",
+        name: "Portfolio (Bootstrap project)",
+        description: "Portfolio developement using Bootstrap.",
+        platform: "Web",
         screenshot: "./img/web_bootstrap_exercise.png",
         link: "https://zorz0004.github.io/bootstrap-assignment/"
     }
