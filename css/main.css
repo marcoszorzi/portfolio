@@ -321,8 +321,23 @@ html{
 
 .portfolio > .cards > li >  div > .link{
     grid-area: link;
+    background-color: #2F4152;
+    color: white;
+    max-width: 100px;
+    max-height: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    border: 4px outset #2F4152;
+    border-radius: 7px;
+    line-height: 1rem;
+    padding: 2px;
 }
 
+.portfolio > .cards > li >  div > .link:hover{
+    color: #EEE;
+    background-color: #3699DC;
+    border-color: #3699DC;
+}
 
 
 /* FOOTER */
