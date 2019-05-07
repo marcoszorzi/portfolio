@@ -164,7 +164,7 @@ let portfolio = [
         description: "Full-stack developed website, using HTML 5, CSS 3, Javascript on front-end. NodeJS, MongoDB, Express and CRUD makes everything happend on back-end.",
         platform: "Web",
         screenshot: "./img/web_pizzashop.png",
-        link: "https://zorz0004.github.io/pizzashop/"
+        link: "https://github.com/zorz0004/pizzashop/"
     },
     {
         id: 2,
