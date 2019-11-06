@@ -9,8 +9,20 @@
     };
 
  let experience = [
-    {
+      {
         "id": 1,
+        "title": "Employee Services Representative at VON Canada",
+        "time": "2019-Current",
+        "roles":["Respond to queries from staff and external vendors based on priority",
+        "Create, edit and format documents and reports",
+        "Support Managers as needed",
+        "Data Entry on SAP, HR module",
+        "Setup of New Employees and paperwork analysis",
+        "Process: Sick Leaves, Returns to Work, Maternity Leaves, Terminations, Pay Changes, Promotions and Transfers",
+        "Provide on demand: Employment Letter, Promotion Letter, Demotion Letter and Change of Assignment Letter"]
+    },
+    {
+        "id": 2,
         "title": "Systems Consultant at Senior Curitiba",
         "time": "2018-2019",
         "roles":["Provide remote support for installation, maintenance and use of Senior Systems",
@@ -23,7 +35,7 @@
         "Prepare documentation and user manuals, including written instruction on procedures related"]
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Systems Administrator at Boticario Group",
         "time": "2018-2018",
         "roles":["Accountable for maintenance and support of Vetorh platform from Senior Systems",
@@ -39,7 +51,7 @@
                  "Follow-up on internal projects related to HR area with diverse systems platforms."]
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Systems Consultant at Senior Curitiba",
         "time": "2014-2018",
         "roles":["Provide remote support for installation, maintenance and use of Senior Systems",
@@ -53,7 +65,7 @@
                  "Elaborate and perform training for clients"]
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Systems Administrator at Lactec Institutes",
         "time": "2009-2014",
         "roles":["Accountable for application installation, maintenance and support of Senior Systems",
