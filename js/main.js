@@ -5,7 +5,7 @@
         "linkedin": "https://ca.linkedin.com/in/marcos-zorzi-rosa",
         "city": "Ottawa, ON, Canada",
         "picture": "./img/profile.jpg",
-        "about": "Mobile Application Design and Development student, with a passion for programming, skilled in C, Java and SQL. With more than 10 years of experience in the IT field. Proficient in C, C#, C++, Java, SQL, Oracle PL-SQL, HTML, CSS, JavaScript, Bootstrap, MongoDB, Postman, Git, Adobe Illustrator, Photoshop, and XD."
+        "about": "Mobile Application Design and Development Graduated (Honours). With more than 10 years of experience in the IT field. Proficient in C, C#, C++, Java, SQL, Oracle PL-SQL, HTML, CSS, JavaScript, Bootstrap, MongoDB, Postman, Git, Adobe Illustrator, Photoshop, and XD."
     };
 
  let experience = [
@@ -129,7 +129,7 @@ let skills = [
     {
         id: 2,
         skill: "JavaScript",
-        level: 80
+        level: 90
     },
     {
         id: 3,
@@ -150,7 +150,7 @@ let skills = [
     {
         id: 6,
         skill: "Photoshop, Illustrator & XD",
-        level: 70
+        level: 80
     },
     {
         id: 7,
@@ -173,7 +173,7 @@ let portfolio = [
   {
         id: 1,
         name: "CBSA HELPER",
-        description: "JS based voice assistant skill, build for Amazon Alexa® and Google Home®.(Code sharing uppon request, chatbot demo on link below)",
+        description: "Voice assistant application for Canada Border Services Agency(CBSA), build in NodeJS hosted on Google Firebase and deployed for Amazon Alexa® and Google Home®.(Code sharing uppon request, chatbot demo on link below)",
         platform: "Alexa, Google Home, Web",
         screenshot: "./img/CBSA_Helper.png",
         link: "https://bot.dialogflow.com/96a34494-a331-4f68-807a-43f956ea865e"
