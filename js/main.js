@@ -175,7 +175,7 @@ let portfolio = [
         name: "CBSA HELPER",
         description: "JS based voice assistant skill, build for Amazon Alexa® and Google Home®.(Code sharing uppon request, chatbot demo on link below)",
         platform: "Alexa, Google Home, Web",
-        screenshot: "./img/web_pizzashop.png",
+        screenshot: "./img/CBSA_Helper.png",
         link: "https://bot.dialogflow.com/96a34494-a331-4f68-807a-43f956ea865e"
     },
   {
@@ -183,7 +183,7 @@ let portfolio = [
         name: "Restaurant Finder",
         description: "Restaurants suggestions using Yelp® database, fetch by geolocation. React and Expo. (Code sharing uppon request)",
         platform: "Expo(iOS/Android)",
-        screenshot: "./img/web_pizzashop.png",
+        screenshot: "./img/Restaurant_Finder.png",
         link: "https://expo.io/@zorz0004/9135Final"
     },
     {
