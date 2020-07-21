@@ -170,8 +170,24 @@ let skills = [
 ];
 
 let portfolio = [
-    {
+  {
         id: 1,
+        name: "CBSA HELPER",
+        description: "JS based voice assistant skill, build for Amazon Alexa® and Google Home®.(Code sharing uppon request, chatbot demo on link below)",
+        platform: "Alexa, Google Home, Web",
+        screenshot: "./img/web_pizzashop.png",
+        link: "https://bot.dialogflow.com/96a34494-a331-4f68-807a-43f956ea865e"
+    },
+  {
+        id: 2,
+        name: "Restaurant Finder",
+        description: "Restaurants suggestions using Yelp® database, fetch by geolocation. React and Expo. (Code sharing uppon request)",
+        platform: "Expo(iOS/Android)",
+        screenshot: "./img/web_pizzashop.png",
+        link: "https://expo.io/@zorz0004/9135Final"
+    },
+    {
+        id: 3,
         name: "PIZZA SHOP",
         description: "Full-stack developed website, using HTML 5, CSS 3, Javascript on front-end. NodeJS, MongoDB, Express and CRUD makes everything happend on back-end.(Code sharing uppon request)",
         platform: "Web",
@@ -179,7 +195,7 @@ let portfolio = [
         link: "https://zorz0004.github.io/pizzashop/"
     },
     {
-        id: 2,
+        id: 4,
         name: "PLAYR",
         description: "Music player developed with Cordova using Cordova Media plugin.(Code sharing uppon request)",
         platform: "Android",
@@ -187,7 +203,7 @@ let portfolio = [
         link: "https://github.com/zorz0004/playr"
     },
     {
-        id: 3,
+        id: 5,
         name: "FINDR",
         description: "Geolocation app developed with Cordova using Google Maps API.(Code sharing uppon request)",
         platform: "iOS",
@@ -195,7 +211,7 @@ let portfolio = [
         link: "https://github.com/zorz0004/findr"
     },
     {
-        id: 4,
+        id: 6,
         name: "Portfolio (Bootstrap project)",
         description: "Portfolio developement using Bootstrap.(Code sharing uppon request)",
         platform: "Web",
