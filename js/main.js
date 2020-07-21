@@ -85,7 +85,7 @@
 let education = [
     {
         id: 1,
-        title: "Mobile Application Design and Development",
+        title: "(Hons) Mobile Application Design and Development",
         institution: "Algonquin College",
         degree: "Diploma",
         time: "2018-2020",
