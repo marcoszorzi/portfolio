@@ -14,15 +14,14 @@
         "title": "Employee Payroll Bussiness Process Analyst at VON Canada",
         "time": "2020-Current",
         "roles":[
-         "Completes and designs reporting needs for operations and corporate services, making recommendations when necessary for ease of reporting, i.e. HR master data and operation KPI’s.",
-         "Produces consistent reporting on HR master data information, payroll information and financial data and provides to the Senior Management Team",
-         "Ensures the daily execution and management of business improvements and/or project related tasks to accomplish a specific objective through coordination and facilitation with stakeholders.",
-         "Documents “as–is” and develops “to-be” processes, identifying opportunities for business improvements, standardization, simplification and cost reduction in resources and processes.",
-         "Maintains a thorough understanding and current knowledge of HR Policies, Procedures, Terms and Conditions of Employment, Collective Agreements and generally accepted accounting principles (GAAP) in order to effectively evaluate as-is to the to-be processes.",
+         "Completes and designs reporting needs for operations and corporate services",
+         "Produces consistent reporting on HR master data information to the Senior Management Team",
+         "Ensures the daily execution and management of business improvements and/or project related tasks",
+         "Documents “as–is” and develops “to-be” processes, identifying opportunities for business improvements",
          "Creates, reviews and delivers end user training documentation (user guide, process flow charts, training material) and training for accuracy.",
-         "Ensures the development and delivery of documentation and training on SAP standard reports, as well as gather data for ad hoc reporting as requested, supporting Senior Management and Executive team, as well as all business areas and all SAP end users.",
-         "Assists with business testing for configuration changes related to the employee profile regarding vacation entitlements, % in lieu of benefits, and or seniority hours, sick bank quotas and stat quotas, and configuration changes required for Collective Agreement and/or non-union changes.", 
-         "Troubleshoots errors in data processing and pay results, encompassing Security, and determine source of error (process, data or configuration).",
+         "Ensures the development and delivery of documentation and training on SAP standard reports",
+         "Assists with business testing for configuration changes related to the employee profile", 
+         "Troubleshoots errors in data processing and pay results, encompassing Security, and determine source of error.",
          "Oversees year end processing, reporting T4’s and T2200, sunshine list and assists the Senior Director in special projects throughout the year."]
     },
    {
