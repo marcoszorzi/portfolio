@@ -1,11 +1,10 @@
  let contact = 
   {
-        "phone": "(343) 996-8186",
         "email": "marcoszorzi@gmail.com",
         "linkedin": "https://ca.linkedin.com/in/marcos-zorzi-rosa",
         "city": "Ottawa, ON, Canada",
         "picture": "./img/profile.jpg",
-        "about": "Mobile Application Design and Development student, with a passion for programming, skilled in C, Java and SQL. With more than 10 years of experience in the IT field. Proficient in C, C#, C++, Java, SQL, Oracle PL-SQL, HTML, CSS, JavaScript, Bootstrap, MongoDB, Postman, Git, Adobe Illustrator, Photoshop, and XD."
+        "about": "Mobile Application Design and Development graduate, with a passion for programming, skilled in C, Java and SQL. With more than 10 years of experience in the IT field. Proficient in C, C#, C++, Java, SQL, Oracle PL-SQL, HTML, CSS, JavaScript, Bootstrap, MongoDB, Postman, Git, Adobe Illustrator, Photoshop, and XD."
     };
 
  let experience = [
@@ -222,7 +221,6 @@ function setProfile(ev){
     let contactInfo = document.querySelector(".contactInfo");
 
     //Set values
-    contactInfo.querySelector(".phone").querySelector(".myPhone").innerText = contact.phone;
     contactInfo.querySelector(".email").querySelector(".myEmail").innerText = contact.email;
     contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").href = contact.linkedin;
     contactInfo.querySelector(".linkedin").querySelector(".myLinkedIn").innerText = "Click to Go";
