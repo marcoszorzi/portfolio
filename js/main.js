@@ -8,8 +8,35 @@
     };
 
  let experience = [
-    {
+      {
         "id": 1,
+        "title": "Employee Payroll Bussiness Process Analyst at VON Canada",
+        "time": "2020-Current",
+        "roles":[
+         "Completes and designs reporting needs for operations and corporate services",
+         "Produces consistent reporting on HR master data information to the Senior Management Team",
+         "Ensures the daily execution and management of business improvements and/or project related tasks",
+         "Documents “as–is” and develops “to-be” processes, identifying opportunities for business improvements",
+         "Creates, reviews and delivers end user training documentation (user guide, process flow charts, training material) and training for accuracy.",
+         "Ensures the development and delivery of documentation and training on SAP standard reports",
+         "Assists with business testing for configuration changes related to the employee profile", 
+         "Troubleshoots errors in data processing and pay results, encompassing Security, and determine source of error.",
+         "Oversees year end processing, reporting T4’s and T2200, sunshine list and assists the Senior Director in special projects throughout the year."]
+    },
+   {
+        "id": 2,
+        "title": "Employee Services Representative at VON Canada",
+        "time": "2019-2020",
+        "roles":["Respond to queries from staff and external vendors based on priority",
+        "Create, edit and format documents and reports",
+        "Support Managers as needed",
+        "Data Entry on SAP, HR module",
+        "Setup of New Employees and paperwork analysis",
+        "Process: Sick Leaves, Returns to Work, Maternity Leaves, Terminations, Pay Changes, Promotions and Transfers",
+        "Provide on demand: Employment Letter, Promotion Letter, Demotion Letter and Change of Assignment Letter"]
+    },
+    {
+        "id": 3,
         "title": "Systems Consultant at Senior Curitiba",
         "time": "2018-2019",
         "roles":["Provide remote support for installation, maintenance and use of Senior Systems",
@@ -22,7 +49,7 @@
         "Prepare documentation and user manuals, including written instruction on procedures related"]
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Systems Administrator at Boticario Group",
         "time": "2018-2018",
         "roles":["Accountable for maintenance and support of Vetorh platform from Senior Systems",
@@ -38,7 +65,7 @@
                  "Follow-up on internal projects related to HR area with diverse systems platforms."]
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "Systems Consultant at Senior Curitiba",
         "time": "2014-2018",
         "roles":["Provide remote support for installation, maintenance and use of Senior Systems",
@@ -52,7 +79,7 @@
                  "Elaborate and perform training for clients"]
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Systems Administrator at Lactec Institutes",
         "time": "2009-2014",
         "roles":["Accountable for application installation, maintenance and support of Senior Systems",
@@ -72,7 +99,7 @@
 let education = [
     {
         id: 1,
-        title: "Mobile Application Design and Development",
+        title: "(Hons) Mobile Application Design and Development",
         institution: "Algonquin College",
         degree: "Diploma",
         time: "2018-2020",
@@ -116,7 +143,7 @@ let skills = [
     {
         id: 2,
         skill: "JavaScript",
-        level: 80
+        level: 90
     },
     {
         id: 3,
@@ -137,7 +164,7 @@ let skills = [
     {
         id: 6,
         skill: "Photoshop, Illustrator & XD",
-        level: 70
+        level: 80
     },
     {
         id: 7,
@@ -157,34 +184,50 @@ let skills = [
 ];
 
 let portfolio = [
-    {
+  {
         id: 1,
+        name: "CBSA HELPER",
+        description: "Voice assistant application for Canada Border Services Agency(CBSA), build in NodeJS hosted on Google Firebase and deployed for Amazon Alexa® and Google Home®.(Code sharing uppon request, chatbot demo on link below)",
+        platform: "Alexa, Google Home, Web",
+        screenshot: "./img/CBSA_Helper.png",
+        link: "https://bot.dialogflow.com/96a34494-a331-4f68-807a-43f956ea865e"
+    },
+  {
+        id: 2,
+        name: "Restaurant Finder",
+        description: "Restaurants suggestions using Yelp® database, fetch by geolocation. React and Expo. (Code sharing uppon request)",
+        platform: "Expo(iOS/Android)",
+        screenshot: "./img/Restaurant_Finder.png",
+        link: "https://expo.io/@zorz0004/9135Final"
+    },
+    {
+        id: 3,
         name: "PIZZA SHOP",
-        description: "Full-stack developed website, using HTML 5, CSS 3, Javascript on front-end. NodeJS, MongoDB, Express and CRUD makes everything happend on back-end.",
+        description: "Full-stack developed website, using HTML 5, CSS 3, Javascript on front-end. NodeJS, MongoDB, Express and CRUD makes everything happend on back-end.(Code sharing uppon request)",
         platform: "Web",
         screenshot: "./img/web_pizzashop.png",
         link: "https://zorz0004.github.io/pizzashop/"
     },
     {
-        id: 2,
+        id: 4,
         name: "PLAYR",
-        description: "Music player developed with Cordova using Cordova Media plugin.",
+        description: "Music player developed with Cordova using Cordova Media plugin.(Code sharing uppon request)",
         platform: "Android",
         screenshot: "./img/a_playr.png",
         link: "https://github.com/zorz0004/playr"
     },
     {
-        id: 3,
+        id: 5,
         name: "FINDR",
-        description: "Geolocation app developed with Cordova using Google Maps API.",
+        description: "Geolocation app developed with Cordova using Google Maps API.(Code sharing uppon request)",
         platform: "iOS",
         screenshot: "./img/ios_findr.png",
         link: "https://github.com/zorz0004/findr"
     },
     {
-        id: 4,
+        id: 6,
         name: "Portfolio (Bootstrap project)",
-        description: "Portfolio developement using Bootstrap.",
+        description: "Portfolio developement using Bootstrap.(Code sharing uppon request)",
         platform: "Web",
         screenshot: "./img/web_bootstrap_exercise.png",
         link: "https://zorz0004.github.io/bootstrap-assignment/"
